@@ -10,6 +10,12 @@ import static io.github.spencerpark.ijava.runtime.Display.*;
 import static io.github.spencerpark.ijava.runtime.Kernel.*;
 import static io.github.spencerpark.ijava.runtime.Magics.*;
 
+import org.graalvm.python.embedding.utils.GraalPyResources;
+import org.graalvm.polyglot.PolyglotException;
+import org.graalvm.polyglot.Source;
+
+var context = GraalPyResources.contextBuilder().allowAllAccess(true).build();
+
 public void printf(String format, Object... args) {
     System.out.printf(format, args);
 }

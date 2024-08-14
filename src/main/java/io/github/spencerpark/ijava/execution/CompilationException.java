@@ -32,6 +32,11 @@ public class CompilationException extends Exception {
         this.badSnippetCompilation = badSnippetCompilation;
     }
 
+    @Override
+    public String getMessage() {
+        return this.badSnippetCompilation.toString();
+    }
+
     public SnippetEvent getBadSnippetCompilation() {
         return badSnippetCompilation;
     }

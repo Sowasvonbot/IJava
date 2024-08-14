@@ -47,8 +47,8 @@ licenseReport {
 }
 
 compileJava {
-    sourceCompatibility = 1.9
-    targetCompatibility = 1.9
+    sourceCompatibility = 15
+    targetCompatibility = 15
 }
 
 configurations {
