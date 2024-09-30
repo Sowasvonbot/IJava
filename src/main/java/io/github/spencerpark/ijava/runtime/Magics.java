@@ -32,6 +32,7 @@ public class Magics {
             } catch (UndefinedMagicException e) {
                 throw e;
             } catch (Exception e) {
+                e.printStackTrace();
                 throw new RuntimeException(String.format("Exception occurred while running cell magic '%s': %s", name, e.getMessage()), e);
             }
         } else {
